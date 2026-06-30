@@ -4,8 +4,7 @@
 <header class="header">
   <div class="container header__inner">
     <a href="/" class="header__brand" aria-label="Kraan Corporate — Inicio">
-      <span class="header__brand-mark"></span>
-      Kraan Corporate
+      <img src="/images/logo%20kraan%20corporate.png" alt="Kraan Corporate" class="header__logo" width="230" height="52">
     </a>
 
     <input type="checkbox" id="header-menu-toggle" class="header__checkbox" hidden>
@@ -68,12 +67,10 @@
     flex-shrink: 0;
   }
 
-  .header__brand-mark {
+  .header__logo {
     display: block;
-    width: 8px;
-    height: 8px;
-    background-color: var(--color-accent);
-    border-radius: 50%;
+    max-height: 52px;
+    width: auto;
     flex-shrink: 0;
   }
 
