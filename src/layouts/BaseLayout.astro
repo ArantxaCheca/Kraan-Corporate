@@ -1,0 +1,23 @@
+---
+import "../styles/globals.css";
+import "../styles/variables.css";
+import "../styles/typography.css";
+import "../styles/utilities.css";
+import SEO from "../components/common/SEO.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <SEO />
+  </head>
+  <body>
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

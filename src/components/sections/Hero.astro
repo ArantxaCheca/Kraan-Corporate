@@ -1,0 +1,272 @@
+---
+---
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="eyebrow">Corporate Finance &middot; M&A &middot; Asset Management</span>
+      <h1 class="hero__title">Impulsamos operaciones estrat&eacute;gicas, crecimiento empresarial y creaci&oacute;n de valor.</h1>
+      <p class="hero__subtitle">Firma especializada en M&amp;A, Corporate Finance y Asset Management, enfocada en operaciones de compra, venta, expansi&oacute;n empresarial, fundraising, valoraciones, reestructuraciones y gesti&oacute;n de activos.</p>
+      <div class="hero__actions">
+        <a href="/contacto" class="button button-primary hero__btn">Solicitar asesoramiento</a>
+        <a href="/servicios" class="button button-secondary hero__btn">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__cards">
+        <article class="hero__card">
+          <div class="hero__card-accent"></div>
+          <div class="hero__card-body">
+            <div class="hero__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.5" y="9" width="12" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="12.5" y="7" width="12" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="hero__card-title">M&amp;A Advisory</h3>
+              <p class="hero__card-text">Compra, venta y fusi&oacute;n de empresas. Debida diligencia y valoraci&oacute;n estrat&eacute;gica.</p>
+            </div>
+          </div>
+        </article>
+        <article class="hero__card">
+          <div class="hero__card-accent"></div>
+          <div class="hero__card-body">
+            <div class="hero__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 21L10.5 14L15.75 17.5L24.5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.25 7H24.5V12.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="hero__card-title">Corporate Finance</h3>
+              <p class="hero__card-text">Estructuraci&oacute;n de capital, fundraising y reestructuraci&oacute;n financiera estrat&eacute;gica.</p>
+            </div>
+          </div>
+        </article>
+        <article class="hero__card">
+          <div class="hero__card-accent"></div>
+          <div class="hero__card-body">
+            <div class="hero__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 3.5L24.5 14L14 24.5L3.5 14L14 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="14" cy="14" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="hero__card-title">Asset Management</h3>
+              <p class="hero__card-text">Gesti&oacute;n y administraci&oacute;n de activos patrimoniales con visi&oacute;n estrat&eacute;gica.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding-block: var(--space-16);
+    overflow: hidden;
+  }
+
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  .hero__content {
+    max-width: 580px;
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-6);
+  }
+
+  .hero__subtitle {
+    font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text);
+    margin-bottom: var(--space-8);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .hero__btn {
+    font-size: 0.9375rem;
+  }
+
+  /* --- Visual Panel --- */
+  .hero__visual {
+    position: relative;
+    background-color: var(--bg-dark);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-10) var(--space-8);
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Decorative grid pattern */
+  .hero__visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 36px 36px;
+    pointer-events: none;
+  }
+
+  /* Decorative circle top-right */
+  .hero__visual::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    top: -80px;
+    right: -60px;
+    pointer-events: none;
+  }
+
+  /* Decorative circle bottom-left via extra pseudo-element */
+  .hero__visual-decoration {
+    display: none;
+  }
+
+  .hero__cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    width: 100%;
+  }
+
+  .hero__card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-5) var(--space-6);
+    backdrop-filter: blur(2px);
+    transition: background var(--transition-base), border-color var(--transition-base);
+  }
+
+  .hero__card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .hero__card-accent {
+    width: 32px;
+    height: 3px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+    margin-bottom: var(--space-4);
+  }
+
+  .hero__card-body {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .hero__card-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(242, 140, 40, 0.1);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-accent);
+  }
+
+  .hero__card-title {
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin-bottom: var(--space-1);
+    letter-spacing: -0.01em;
+  }
+
+  .hero__card-text {
+    font-size: 0.8125rem;
+    line-height: var(--line-height-base);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 1023px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+
+    .hero__content {
+      max-width: 100%;
+    }
+
+    .hero__visual {
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding-block: var(--space-12);
+    }
+
+    .hero__actions {
+      flex-direction: column;
+    }
+
+    .hero__btn {
+      width: 100%;
+    }
+
+    .hero__visual {
+      padding: var(--space-8) var(--space-6);
+    }
+
+    .hero__card-body {
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+  }
+
+  /* Extra decorative element: small circle bottom-left in visual panel */
+  @media (min-width: 769px) {
+    .hero__visual .hero__cards::after {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 50%;
+      bottom: -40px;
+      left: -30px;
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+</style>

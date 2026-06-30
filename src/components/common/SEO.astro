@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogUrl?: string;
+}
+
+const { title, description, ogImage, ogUrl } = Astro.props;
+const siteTitle = title ?? "Kraan Corporate";
+const siteDescription = description ?? "Boutique financiera especializada en M&A, Corporate Finance y Asset Management";
+const defaultOgImage = ogImage ?? "/og-image.jpg";
+const siteUrl = ogUrl ?? "https://kraancorporate.com";
+---
+
+<meta charset="utf-8" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{siteTitle}</title>
+<meta name="description" content={siteDescription} />
+<meta property="og:title" content={siteTitle} />
+<meta property="og:description" content={siteDescription} />
+<meta property="og:image" content={defaultOgImage} />
+<meta property="og:url" content={siteUrl} />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={siteTitle} />
+<meta name="twitter:description" content={siteDescription} />
+<meta name="twitter:image" content={defaultOgImage} />
